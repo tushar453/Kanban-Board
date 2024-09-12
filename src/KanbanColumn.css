@@ -1,0 +1,252 @@
+.kanban-column {
+    padding: 16px;
+    margin-right: 16px;
+    flex: 1;
+    max-width: 100%; /* Change to 100% on small screens */
+    box-sizing: border-box; /* Ensure padding is included in width calculations */
+}
+
+@media (min-width: 768px) {
+    .kanban-column {
+        max-width: 300px; /* For larger screens, restore the original width */
+    }
+}
+
+.user-profile-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.column-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+}
+
+.header-icon {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Ensure icons wrap on smaller screens */
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.kanban-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto; /* Let the content dictate the height */
+}
+
+.card-id {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.card-status-title {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.status-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.priority-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.card-tag {
+    font-size: 12px;
+    color: #555;
+    border: 1px solid rgb(123, 118, 118);
+    border-radius: 3px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.column-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-icon {
+    width: 24px;
+    height: 24px;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 780px) {
+    .kanban-column {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 16px; /* Add space between columns on small screens */
+    }
+
+    
+    .column-header, .header-left, .header-right {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .kanban-card {
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .card-footer {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 4px;
+    }
+}
+
+@media (max-width: 891px) {
+    .card-title {
+        font-weight: bold;
+        font-size: 11px;
+    }
+}
+@media (max-width: 480px) {
+    .kanban-column {
+        padding: 12px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .icon, .priority-icon, .status-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .user-profile-circle {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
+}
+
+
+.kanban-card {
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-bottom: 10px; */
+}
+
+.user-profile-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 14px;
+}

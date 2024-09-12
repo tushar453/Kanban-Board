@@ -1,0 +1,68 @@
+.controls-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.select-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.display-select {
+    appearance: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px 40px 8px 50px;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.display-icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+    width: max-content;
+}
+
+.dropdown-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.dropdown-row label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.dropdown-row select {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+}
