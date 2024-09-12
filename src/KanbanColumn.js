@@ -59,7 +59,7 @@ const KanbanColumn = ({ title, tickets, groupBy, users }) => {
                         alt={`${title} Icon`}
                         className="header-icon"
                     />
-                    <h2>{title}</h2>
+                    <h2>{title}{tickets.length}</h2>
                     </div>
 
                     <div className="header-right">
@@ -85,7 +85,7 @@ const KanbanColumn = ({ title, tickets, groupBy, users }) => {
                         alt={`${title} Icon`}
                         className="header-icon"
                     />
-                    <h2>{title}</h2>
+                    <h2>{title} {tickets.length}</h2>
                     </div>
                     <div className="header-right">
                     <img
@@ -108,7 +108,7 @@ const KanbanColumn = ({ title, tickets, groupBy, users }) => {
                 <div className="column-header ">
                     <div className="header-left user-header">
                     <div className="user-profile-circle">{userInitials}</div>
-                    <h2>{title}</h2></div>
+                    <h2>{title} {tickets.length}</h2></div>
 
                     <div className="header-right">
                     <img

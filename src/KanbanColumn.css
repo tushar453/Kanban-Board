@@ -90,6 +90,7 @@ h2 {
 .card-id {
     font-weight: bold;
     font-size: 14px;
+    color: grey;
 }
 
 .card-status-title {
@@ -122,7 +123,7 @@ h2 {
 .card-tag {
     font-size: 12px;
     color: #555;
-    border: 1px solid rgb(123, 118, 118);
+    border: 1px solid #e7e1e1;
     border-radius: 3px;
     padding: 3px;
     display: flex;
@@ -257,4 +258,12 @@ h2 {
 .user-name {
     font-weight: bold;
     font-size: 14px;
+}
+
+.priority-icon {
+    border: 1px solid #e7e1e1;
+    border-radius: 8px;
+    width: 20px;
+    padding: 10px;
+    height: 20px;
 }
