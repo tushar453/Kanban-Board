@@ -1,5 +1,6 @@
 .app-container {
   /* padding: 20px; */
+  background-color: white;
   box-sizing: border-box; /* Ensure padding is included in width calculations */
 }
 
