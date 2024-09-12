@@ -1,5 +1,5 @@
 .app-container {
-  padding: 20px;
+  /* padding: 20px; */
   box-sizing: border-box; /* Ensure padding is included in width calculations */
 }
 
@@ -19,6 +19,8 @@
 .kanban-board {
   display: flex;
   gap: 20px;
+  background-color: whitesmoke;
+  padding: 10px;
 }
 
 /* For smaller screens */
